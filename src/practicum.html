@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Practicum</title>
+    <style>
+      .box .inner:first-child {
+        background-color: indianred;
+        color: darkred;
+        transform-origin: right;
+        transform: perspective(100px) rotateY(-15deg);
+      }
+
+      .box .inner:last-child {
+        background-color: lightcoral;
+        color: antiquewhite;
+        transform-origin: left;
+        transform: perspective(100px) rotateY(15deg);
+      }
+
+      .box .inner span {
+        position: absolute;
+        animation: marquee 5s linear infinite;
+      }
+
+      .box .inner:first-child span {
+        animation-delay: 2.5s;
+        left: -100%;
+      }
+
+      @keyframes marquee {
+        from {
+          left: 100%;
+        }
+
+        to {
+          left: -100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="w-full max-w-4xl mx-auto py-32">
+      <div class="mb-32">
+        <a
+          href="index.html"
+          class="relative before:content[''] before:absolute before:top-0 before:left-[0.1875em] before:bottom-0 before:w-[7px] before:h-[7px] before:mt-auto before:mb-auto before:border-r before:border-t before:border-black before:text-base before:rotate-[225deg] underline hover:decoration-2 outline-none ring-0 pl-3.5 active:no-underline active:border-b-4 active:border-black focus:no-underline focus:border-b-4 focus: border-black focus:bg-yellow-400"
+        >
+          Back
+        </a>
+        <div class="flex items-center justify-center">
+          <img class="mt-12 mb-8" width="500" src="./cover.jpg" />
+        </div>
+
+        <p class="text-4xl font-bold mb-4 text-center tracking-tighter">
+          What I've done for my
+          <span class="italic underline">CS Practicum</span> in TDK Philippines
+          Corporation
+        </p>
+        <p class="text-xl italic text-center w-full">
+          developed software, cleaned data, designed databases, and more...
+        </p>
+      </div>
+      <div class="flex justify-between mb-56">
+        <p class="leading-10 text-xl w-full pr-4">
+          TDK started with ferrite cores. TDK Philippines Corporation (TPC)
+          specializes in inductors, HDD heads, sensors, and stabilizers. The
+          <span class="italic underline">Information Systems Department </span
+          >of TPC manages essential systems for production, HR, and IT, focusing
+          on infrastructure and development.
+        </p>
+        <img
+          class="max-w-lg"
+          src="https://1000logos.net/wp-content/uploads/2021/05/TDK-logo.png"
+        />
+      </div>
+
+      <div class="mb-56">
+        <p class="text-center italic text-4xl leading-loose">
+          During my OJT at TDK Philippines, my primary objective was to address
+          critical
+          <span class="underline"
+            >inefficiencies in data management practices within the IT
+            department</span
+          >, identified through initial data gathering and interviews.
+          <span class="text-blue-600"
+            ><br /><br /><br /><br />This guided the focus of my
+            assignments...</span
+          >
+        </p>
+        <div class="mt-6">
+          <p class="text-4xl tracking-tighter text-center text-blue-600">
+            Software Engineering & Data Migration
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-6xl text-center italic">So what were the results?</p>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-6xl text-center mb-12 font-bold">
+          A prototype Asset Management System
+        </p>
+        <img src="asset-system.jpg" />
+        <p class="leading-10 text-xl mt-12">
+          The prototype asset management system is designed to streamline asset
+          tracking and management processes. It features capabilities such as
+          comprehensive asset inventory management, lifecycle tracking of assets
+          from acquisition to disposal, and data migration to facilitate a
+          smooth transition from existing Excel systems. 
+          <br><br>The system includes
+          basic reporting tools to analyze asset usage and status, and a
+          user-friendly interface with customizable views for easy navigation.
+          Although still non-functional, this prototype lays the groundwork for
+          future development and enhancements.
+        </p>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-6xl text-center mb-12 font-bold">
+          An EAV database consisting of current IT assets of ISD
+        </p>
+        <img src="eav.jpg" />
+        <p class="leading-10 text-xl mt-12">
+          The Entity-Attribute-Value (EAV) database model supports flexible data
+          management by efficiently storing various asset attributes in a
+          structured format. This design allows for easy scalability and
+          adaptability as new asset types or attributes are introduced. 
+          
+          <br><br>I have
+          successfully completed data migration from existing Excel systems such
+          as PCs and servers to the EAV database, ensuring a seamless transition
+          and preserving data integrity. This migration process has laid a solid
+          foundation for the asset management system, enabling more efficient
+          data handling and reporting in the future.
+        </p>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-6xl text-center mb-12 font-bold">
+          A case study to improve ISD's asset management practices
+        </p>
+        <img src="report.jpg" />
+        <p class="leading-10 text-xl mt-12">
+          The case study aims to improve the Information Systems Department's
+          (ISD) asset management practices by identifying inefficiencies and
+          proposing solutions. It analyzes current workflows, data management
+          challenges, and user needs to develop a more effective asset
+          management system. 
+          
+          <br><br>By addressing these challenges, the study seeks to
+          enhance operational efficiency, streamline data processes, and ensure
+          better tracking and reporting of IT assets, ultimately supporting
+          future development of a software tool for an asset management system.
+        </p>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-5xl font-bold mb-12 text-center tracking-tighter">
+            What I learned
+        </p>
+        <div class="mb-8">
+            <ul class="list-disc list-inside mt-4 text-lg space-y-8">
+                <li>
+                    <strong>Blazor and .NET Development:</strong> During my OJT, I gained extensive hands-on experience in using Blazor and .NET for building interactive web applications. This framework allowed me to create responsive user interfaces and implement complex functionalities efficiently. I learned about the lifecycle of Blazor components and how to manage state effectively within the application. Additionally, the integration with .NET provided a robust backend framework that streamlined development processes. Overall, this experience significantly enhanced my web development skills and confidence in using modern technologies.
+                </li>
+                <li>
+                    <strong>Database Design and Oracle SQL:</strong> I developed a solid understanding of database design principles while working with Oracle SQL. This involved creating efficient schemas that support various data relationships and ensure data integrity. I learned to write complex queries to retrieve and manipulate data effectively, which is crucial for any application. Moreover, designing databases with scalability in mind prepared me for future projects that may require additional features or modifications. This experience was invaluable in enhancing my technical capabilities in database management.
+                </li>
+                <li>
+                    <strong>Data Migration:</strong> A significant part of my project involved migrating data from Excel to a structured database, which required careful planning and execution. This process highlighted the importance of data accuracy and integrity during transitions, as any errors could lead to major issues later on. I developed scripts to automate parts of the migration, ensuring a smoother and more efficient transfer of information. Through this experience, I gained insights into data mapping and transformation techniques essential for successful migrations. Ultimately, this reinforced the importance of thorough data handling practices in any IT project.
+                </li>
+            </ul>
+        </div>
+      </div>
+      
+      <div class="mb-56">
+        <p class="text-5xl font-bold mb-12 text-center tracking-tighter">
+            What I realized
+        </p>
+        <div class="mb-8">
+            <ul class="list-disc list-inside mt-4 text-lg space-y-8">
+                <li>
+                    <strong>Documentation is Key:</strong> Throughout my internship, I realized the critical role documentation plays in the success of any project. Thorough documentation facilitates better understanding among team members, ensuring everyone is aligned with the project goals and processes. It serves as a valuable resource for future reference, helping new team members onboard more efficiently. Furthermore, well-maintained documentation aids in tracking changes and decisions made throughout the project lifecycle. Ultimately, this realization emphasized the need for consistent documentation practices in all my future endeavors.
+                </li>
+                <li>
+                    <strong>Focus on Non-Coding Tasks:</strong> I came to understand that dedicating a significant portion of my efforts to non-coding tasks is essential for successful project outcomes. This includes activities such as planning, designing, and refining processes, which are often just as important as actual coding. Investing time in these areas helps to identify potential challenges early on and ensures a smoother development process. Additionally, this focus contributes to the overall quality of the final product, making it more robust and user-friendly. This realization has reshaped my approach to project management and execution.
+                </li>
+                <li>
+                    <strong>Solidify Processes First:</strong> One of the key insights I gained is the necessity of solidifying processes before entering the development phase. Establishing clear and well-defined processes helps avoid complications and sets a solid foundation for the project. It ensures that all stakeholders are on the same page and reduces the likelihood of misunderstandings later on. By having robust processes in place, the development team can work more efficiently and effectively towards common goals. This understanding will significantly influence my approach in future projects.
+        </div>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-5xl font-bold mb-12 text-center tracking-tighter">
+            Conclusion
+        </p>
+        <div class="mb-8">
+            <div class="mb-8">
+                <p class="mt-4 text-lg">
+                    In reflection, my On-the-Job Training at TDK Philippines Corporation has been a pivotal period of growth, both professionally and personally. Mastering technologies such as Blazor and Oracle SQL while refining project management and prioritization skills has been instrumental in my development. 
+                </p>
+                <p class="mt-4 text-lg">
+                    Realizing the significance of effective self-management and setting attainable goals has provided valuable lessons in time management and productivity. Moreover, comprehending the complexities of database design and the practical benefits of leveraging existing tools in software development has broadened his perspective on industry best practices.
+                </p>
+                <p class="mt-4 text-lg">
+                    Encountering challenges, such as underestimating project scopes and grappling with overthinking, has imparted invaluable insights into overcoming obstacles and adapting to evolving project demands. These realizations have not only strengthened my technical proficiency but also equipped him with essential soft skills, such as communication and teamwork.
+                </p>
+                <p class="mt-4 text-lg">
+                    Looking forward, the trainee is eager to apply these learnings in future endeavors, confident that they will serve as a solid foundation for his career aspirations in software development and IT operations. My OJT experience at TDK Philippines Corporation has prepared me to navigate the dynamic and demanding landscape of technology with resilience and innovation, ready to tackle new challenges and contribute meaningfully to future projects.
+                </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="mb-56">
+        <p class="text-5xl font-bold mb-12 text-center tracking-tighter">
+            Appendecies
+        </p>
+        <div class="mb-8">
+            <div class="mb-8">
+                <p class="mt-4 text-lg">
+                    <a>Competency-Based CV</a>
+                    <a>Practicum Confirmation and Acceptance Form</a>
+                    <a>Student Training Agreement and Liability Waiver</a>
+                    <a>Training Plan</a>
+                    <a>Final Report Document</a>
+                </p>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
